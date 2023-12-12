@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/rsvp.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img class="arrow" src="assets/arrow.png" /></a>
+      <p class="date">06 APRIL 2024</p>
+    </nav>
+    <header>
+      <h1>RSVP</h1>
+      <h3>Guests by invite only</h3>
+    </header>
+    <p class="dresscode">
+      Let us know if you will be joining us for our festivities. We ask that our
+      guests wear formal attire and
+      <strong style="color: #b28f23"
+        >RSVP before the 12th of January 2024.</strong
+      >
+    </p>
+    <form
+      id="myForm"
+      action="https://formsubmit.io/send/boshimedia@gmail.com"
+      method="POST"
+    >
+      <input
+        name="_redirect"
+        type="hidden"
+        id="name"
+        value="https://heychani.github.io/SteenkampWedding/successful.html"
+      />
+      <p class="guest">Guest One</p>
+      <input
+        type="text"
+        name="guest1_name"
+        class="input"
+        placeholder="Name & Surname"
+        required
+      />
+      <select class="input" name="meal_option">
+        <option value="food_options">Meal Option</option>
+        <option value="meat">I'd like the meat option</option>
+        <option value="vegan">I'd like the vegan option</option>
+      </select>
+      <p class="guest">Guest Two</p>
+      <input
+        type="text"
+        name="guest2_name"
+        class="input"
+        placeholder="Name & Surname"
+      />
+      <select class="input" name="meal_option_guest2">
+        <option value="food_options">Meal Option</option>
+        <option value="meat">I'd like the meat option</option>
+        <option value="vegan">I'd like the vegan option</option>
+      </select>
+      <p>Please select one of the following</p>
+      <select class="input" name="RSVP">
+        <option class="option" value="yes_weekend">
+          We are coming for the entire weekend
+        </option>
+        <option value="yes">
+          We will only be able to come on the Saturday
+        </option>
+        <option value="no">We won't be able to make it</option>
+      </select>
+      <br />
+      <input id="submit" class="submit" type="submit" value="SUBMIT" />
+    </form>
+  </body>
+</html>

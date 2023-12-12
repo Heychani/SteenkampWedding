@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  background-color: #b28e2322;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+  }
+  .arrow {
+    width: 18px;
+    height: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+  }
+  .date {
+    margin-right: 10px;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .tab:hover,
+  .active-tab {
+    border-bottom: 2px solid #b28f23;
+    color: #b28f23;
+  }
+
+  .details {
+    display: none;
+    margin-top: 40px;
+  }
+  .times {
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 56px;
+  }
+  .cursive {
+    font-family: Snell Roundhand, cursive;
+    margin: 0px 10px;
+    font-size: 48px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+    margin-bottom: 40px;
+  }
+  .arrow {
+    width: 18px;
+    height: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+  }
+  .date {
+    margin-right: 10px;
+  }
+  .atHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 40px 40px 20px 40px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+  }
+  .block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .icons {
+    width: 40px;
+  }
+  .p {
+    margin-top: 0;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  .line {
+    height: 40px;
+  }
+  .celebrate {
+    color: #b28f23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    font-weight: 300;
+  }
+}

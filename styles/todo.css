@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+  }
+  .arrow {
+    width: 18px;
+    height: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+  }
+  .date {
+    margin-right: 10px;
+  }
+  .header {
+    padding: 10px 20px 0px 20px;
+  }
+  h1 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+  }
+  h2 {
+    font-size: 36px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.42px;
+  }
+  h3 {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.42px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "grid-line-1"
+      "grid-line-2"
+      "grid-line-3";
+    margin: 20px;
+  }
+  .grid-line-1 {
+    grid-area: grid-line-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .grid-line-2 {
+    grid-area: grid-line-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+  }
+  .grid-line-3 {
+    grid-area: grid-line-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+  }
+  .goHome {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0px 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    padding: 20px 0px;
+    letter-spacing: 5px;
+  }
+  img {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 250ms ease-out;
+  }
+  img:hover {
+    border: 3px solid rgb(204, 173, 0);
+    cursor: pointer;
+    transform: scale(1.05);
+    transform-origin: center;
+  }
+}

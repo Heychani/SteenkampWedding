@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/choice.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img class="arrow" src="assets/arrow.png" /></a>
+      <p class="date">06 APRIL 2024</p>
+    </nav>
+    <div class="body">
+      <div class="tabs">
+        <a id="fridayTab" class="tab" onclick="showDetails('friday')"
+          >FRIDAY NIGHT</a
+        >
+        <a id="saturdayTab" class="tab" onclick="showDetails('saturday')"
+          >WEDDING DAY</a
+        >
+      </div>
+      <div id="fridayDetails" class="details">
+        <ul>
+          <li class="block">
+            <div class="left">
+              <img class="icons" src="icons/confetti.png" />
+            </div>
+            <div class="right">
+              <h2>Pre-Celebrations</h2>
+              <p class="p">Join us for a small get together</p>
+            </div>
+          </li>
+          <img class="line" src="icons/line.png" />
+          <li class="block">
+            <div class="left">
+              <img class="icons" src="icons/icons8-location-50.png" />
+            </div>
+            <div class="right">
+              <h2>Location</h2>
+              <p class="p">Saronsberg Wine Cellar from 17:00</p>
+            </div>
+          </li>
+          <img class="line" src="icons/line.png" />
+          <li class="block">
+            <div class="left">
+              <img class="icons" src="icons/burger.png" />
+            </div>
+            <div class="right">
+              <h2>Things to bring</h2>
+              <p class="p">Just drinks, food will be provided</p>
+            </div>
+          </li>
+          <img class="line" src="icons/line.png" />
+          <li class="block">
+            <div class="left">
+              <img class="icons" src="icons/icons8-sleep-50.png" />
+            </div>
+            <div class="right">
+              <h2>Until 22:00</h2>
+              <p class="p">We have a big day tomorrow</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="saturdayDetails" class="details">
+        <ul>
+          <li class="block">
+            <div class="left">
+              <img class="icons" src="icons/fireworks.png" />
+            </div>
+            <div class="right">
+              <h2>15:14 - 15:45</h2>
+              <p class="p">Guests arrive</p>
+            </div>
+          </li>
+          <img class="line" src="icons/line.png" />
+          <li class="block">
+            <div class="left">
+              <img class="icons" src="icons/wedding.png" />
+            </div>
+            <div class="right">
+              <h2>16:00 - 17:00</h2>
+              <p class="p">We Say Our I Do's</p>
+            </div>
+          </li>
+          <img class="line" src="icons/line.png" />
+          <li class="block">
+            <div class="left">
+              <img class="icons" src="icons/wine.png" />
+            </div>
+            <div class="right">
+              <h2>17:00 - 18:30</h2>
+              <p class="p">We Celebrate</p>
+            </div>
+          </li>
+          <img class="line" src="icons/line.png" />
+          <li class="block">
+            <div class="left">
+              <img class="icons" src="icons/dance.png" />
+            </div>
+            <div class="right">
+              <h2>18:30 till late</h2>
+              <p class="p">We Dance</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <p class="celebrate">[ We really can't wait to celebrate with you ]</p>
+    </div>
+    <script src="scriptChoice.js"></script>
+  </body>
+</html>
