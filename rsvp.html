@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/rsvp.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("myForm").submit();
+      }
+    </script>
   </head>
   <body>
     <nav>
@@ -33,7 +39,7 @@
       action="https://formsubmit.io/send/boshimedia@gmail.com"
       method="POST"
     >
-      <input type="hidden" name="_url" value="https://heychani.github.io/SteenkampWedding/rsvp.html">
+      </button>
       <input
         name="_redirect"
         type="hidden"
@@ -76,6 +82,7 @@
         <option value="no">We won't be able to make it</option>
       </select>
       <br />
+      <div class="g-recaptcha" data-sitekey="6Lerdy8pAAAAABZt9CYggveandxMJttG-qqM07aw"></div>
       <input id="submit" class="submit" type="submit" value="SUBMIT" />
     </form>
   </body>
